@@ -1,0 +1,135 @@
+/* Paleta de colores */
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #f5f7fa;
+    --accent-color: #50e3c2;
+    --text-color: #333;
+    --background-color: #ffffff;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos generales */
+  body {
+    background-color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* Contenedor principal */
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  /* Títulos */
+  h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+  
+  /* Formulario de tareas */
+  #task-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  #task-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+  }
+  
+  #task-form button {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: var(--border-radius);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #task-form button:hover {
+    background-color: #3ed1a3;
+  }
+  
+  /* Tabla de tareas */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table thead {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Botones de acción */
+  .action-buttons button {
+    margin-right: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .action-buttons .edit-btn {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  
+  .action-buttons .edit-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  .action-buttons .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .action-buttons .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    #task-form {
+      flex-direction: column;
+    }
+  
+    .action-buttons button {
+      margin-bottom: 10px;
+    }
+  }
+  
